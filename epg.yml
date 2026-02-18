@@ -1,0 +1,97 @@
+name: Build Custom EPG
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install tools
+        run: sudo apt-get update && sudo apt-get install -y wget gzip python3
+
+      - name: Download EPG sources
+        run: |
+          wget -O epg_cn.xml.gz https://epg.112114.xyz/pp.xml.gz
+          gunzip -f epg_cn.xml.gz
+
+          wget -O epg_global.xml https://iptv-org.github.io/epg/index.xml
+
+      - name: Extract tvg-id list from M3U and filter EPG
+        run: |
+          python3 - <<'PY'
+          import re
+
+          m3u_file = "iptv_all.m3u"
+          epg_files = ["epg_cn.xml", "epg_global.xml"]
+
+          with open(m3u_file, "r", encoding="utf-8") as f:
+              m3u = f.read()
+
+          ids = set(re.findall(r'tvg-id="([^"]+)"', m3u))
+          ids = {i.strip() for i in ids if i.strip()}
+
+          print("Found tvg-id count:", len(ids))
+
+          out = ['<?xml version="1.0" encoding="UTF-8"?>', '<tv>']
+
+          def filter_epg(xml_text):
+              channels = re.findall(r'(<channel\b.*?</channel>)', xml_text, flags=re.S)
+              programmes = re.findall(r'(<programme\b.*?</programme>)', xml_text, flags=re.S)
+              kept_channels = []
+              kept_programmes = []
+
+              for ch in channels:
+                  m = re.search(r'id="([^"]+)"', ch)
+                  if m and m.group(1) in ids:
+                      kept_channels.append(ch)
+
+              for pr in programmes:
+                  m = re.search(r'channel="([^"]+)"', pr)
+                  if m and m.group(1) in ids:
+                      kept_programmes.append(pr)
+
+              return kept_channels, kept_programmes
+
+          all_channels = []
+          all_programmes = []
+
+          for epg in epg_files:
+              try:
+                  with open(epg, "r", encoding="utf-8", errors="ignore") as f:
+                      xml = f.read()
+                  ch, pr = filter_epg(xml)
+                  all_channels.extend(ch)
+                  all_programmes.extend(pr)
+              except Exception as e:
+                  print("Error reading", epg, e)
+
+          # 去重（避免重复频道）
+          all_channels = list(dict.fromkeys(all_channels))
+          all_programmes = list(dict.fromkeys(all_programmes))
+
+          out.extend(all_channels)
+          out.extend(all_programmes)
+          out.append("</tv>")
+
+          with open("custom_epg.xml", "w", encoding="utf-8") as f:
+              f.write("\n".join(out))
+
+          print("Generated custom_epg.xml")
+          PY
+
+      - name: Compress EPG
+        run: gzip -f custom_epg.xml
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add custom_epg.xml.gz
+          git commit -m "Update custom EPG" || echo "No changes"
+          git push
