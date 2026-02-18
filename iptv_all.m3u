@@ -1,0 +1,161 @@
+#EXTM3U name="广东电信IPTV-精选40台 + 国际精选(新加坡节点)"
+
+############## 国内 - 央视 ##############
+#EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV-1" group-title="央视",CCTV-1 综合
+http://192.168.50.1:4022/udp/239.77.0.129:5146
+#EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV-2" group-title="央视",CCTV-2 财经
+http://192.168.50.1:4022/udp/239.77.1.158:5146
+#EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV-3" group-title="央视",CCTV-3 综艺
+http://192.168.50.1:4022/udp/239.77.0.169:5146
+#EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV-4" group-title="央视",CCTV-4 中文国际
+http://192.168.50.1:4022/udp/239.77.0.78:5146
+#EXTINF:-1 tvg-id="CCTV5" tvg-name="CCTV-5" group-title="央视",CCTV-5 体育
+http://192.168.50.1:4022/udp/239.77.0.170:5146
+#EXTINF:-1 tvg-id="CCTV5+" tvg-name="CCTV-5+" group-title="央视",CCTV-5+ 体育赛事
+http://192.168.50.1:4022/udp/239.77.1.31:5146
+#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV-6" group-title="央视",CCTV-6 电影
+http://192.168.50.1:4022/udp/239.77.0.171:5146
+#EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV-7" group-title="央视",CCTV-7 国防军事
+http://192.168.50.1:4022/udp/239.77.1.159:5146
+#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV-8" group-title="央视",CCTV-8 电视剧
+http://192.168.50.1:4022/udp/239.77.0.172:5146
+#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV-9" group-title="央视",CCTV-9 纪录
+http://192.168.50.1:4022/udp/239.77.1.160:5146
+#EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV-10" group-title="央视",CCTV-10 科教
+http://192.168.50.1:4022/udp/239.77.1.113:5146
+#EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV-12" group-title="央视",CCTV-12 社会与法
+http://192.168.50.1:4022/udp/239.77.1.109:5146
+#EXTINF:-1 tvg-id="CCTV13" tvg-name="CCTV-13" group-title="央视",CCTV-13 新闻
+http://192.168.50.1:4022/udp/239.253.43.196:5146
+#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV-14" group-title="央视",CCTV-14 少儿
+http://192.168.50.1:4022/udp/239.77.1.161:5146
+#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV-15" group-title="央视",CCTV-15 音乐
+http://192.168.50.1:4022/udp/239.77.1.239:5146
+#EXTINF:-1 tvg-id="CCTV16" tvg-name="CCTV-16" group-title="央视",CCTV-16 奥林匹克
+http://192.168.50.1:4022/udp/239.77.0.165:5146
+#EXTINF:-1 tvg-id="CGTN" tvg-name="CGTN" group-title="央视",CGTN 英语
+http://192.168.50.1:4022/udp/239.77.0.199:5146
+#EXTINF:-1 tvg-id="CCTV4EU" tvg-name="CCTV-4 欧洲" group-title="央视",CCTV-4 欧洲
+http://192.168.50.1:4022/udp/239.253.43.120:5146
+
+
+############## 国内 - 卫视 ##############
+#EXTINF:-1 tvg-id="GDTV" tvg-name="广东卫视" group-title="卫视",广东卫视
+http://192.168.50.1:4022/udp/239.77.0.166:5146
+#EXTINF:-1 tvg-id="SZTV" tvg-name="深圳卫视" group-title="卫视",深圳卫视
+http://192.168.50.1:4022/udp/239.77.0.130:5146
+#EXTINF:-1 tvg-id="HUNAN" tvg-name="湖南卫视" group-title="卫视",湖南卫视
+http://192.168.50.1:4022/udp/239.77.1.5:5146
+#EXTINF:-1 tvg-id="ZJTV" tvg-name="浙江卫视" group-title="卫视",浙江卫视
+http://192.168.50.1:4022/udp/239.77.1.33:5146
+#EXTINF:-1 tvg-id="JSTV" tvg-name="江苏卫视" group-title="卫视",江苏卫视
+http://192.168.50.1:4022/udp/239.77.1.18:5146
+#EXTINF:-1 tvg-id="DFTV" tvg-name="东方卫视" group-title="卫视",东方卫视
+http://192.168.50.1:4022/udp/239.77.0.5:5146
+#EXTINF:-1 tvg-id="BTV" tvg-name="北京卫视" group-title="卫视",北京卫视
+http://192.168.50.1:4022/udp/239.77.1.151:5146
+#EXTINF:-1 tvg-id="SDTV" tvg-name="山东卫视" group-title="卫视",山东卫视
+http://192.168.50.1:4022/udp/239.77.1.142:5146
+#EXTINF:-1 tvg-id="HUBTV" tvg-name="湖北卫视" group-title="卫视",湖北卫视
+http://192.168.50.1:4022/udp/239.77.0.128:5146
+#EXTINF:-1 tvg-id="TJTTV" tvg-name="天津卫视" group-title="卫视",天津卫视
+http://192.168.50.1:4022/udp/239.77.0.131:5146
+#EXTINF:-1 tvg-id="AHTV" tvg-name="安徽卫视" group-title="卫视",安徽卫视
+http://192.168.50.1:4022/udp/239.77.1.92:5146
+
+
+############## 国内 - 广东本地 ##############
+#EXTINF:-1 tvg-id="GZJZ" tvg-name="广东珠江" group-title="广东",广东珠江
+http://192.168.50.1:4022/udp/239.77.0.114:5146
+#EXTINF:-1 tvg-id="GDNEWS" tvg-name="广东新闻" group-title="广东",广东新闻
+http://192.168.50.1:4022/udp/239.77.0.173:5146
+#EXTINF:-1 tvg-id="GDSPORT" tvg-name="广东体育" group-title="广东",广东体育
+http://192.168.50.1:4022/udp/239.77.0.168:5146
+#EXTINF:-1 tvg-id="DYQ" tvg-name="大湾区卫视" group-title="广东",大湾区卫视
+http://192.168.50.1:4022/udp/239.77.0.215:5146
+#EXTINF:-1 tvg-id="GDFY" tvg-name="广东影视" group-title="广东",广东影视
+http://192.168.50.1:4022/udp/239.77.0.217:5146
+
+
+############## 国内 - 特色频道 ##############
+#EXTINF:-1 tvg-id="WORLDGEO" tvg-name="世界地理" group-title="特色",世界地理
+http://192.168.50.1:4022/udp/239.253.43.7:5146
+#EXTINF:-1 tvg-id="FYYQ" tvg-name="风云足球" group-title="特色",风云足球
+http://192.168.50.1:4022/udp/239.253.43.14:5146
+
+
+##################################################
+############## 国际频道（新加坡节点适配）##############
+##################################################
+
+############## 香港 Hong Kong ##############
+#EXTINF:-1 tvg-id="RTHKTV31.hk" tvg-name="RTHK TV 31" group-title="香港",RTHK TV 31 (资讯/综合)
+https://rthktv31-live.akamaized.net/hls/live/2101641/RTHKTV31/master.m3u8
+
+#EXTINF:-1 tvg-id="RTHKTV33.hk" tvg-name="RTHK TV 33" group-title="香港",RTHK TV 33 (文化/娱乐)
+https://rthktv33-live.akamaized.net/hls/live/2101640/RTHKTV33/master.m3u8
+
+#EXTINF:-1 tvg-id="RTHKTV34.hk" tvg-name="RTHK TV 34" group-title="香港",RTHK TV 34 (新闻)
+https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/master.m3u8
+
+
+############## 美国 USA ##############
+#EXTINF:-1 tvg-id="ABCNews.us" tvg-name="ABC News Live" group-title="美国",ABC News Live (新闻)
+https://abcnews-streams.akamaized.net/hls/live/2023560/abcnews1/master.m3u8
+
+#EXTINF:-1 tvg-id="CBSNews.us" tvg-name="CBS News" group-title="美国",CBS News (新闻)
+https://cbsn-us.cbsnstream.cbsnews.com/out/v1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="NBCNewsNOW.us" tvg-name="NBC News NOW" group-title="美国",NBC News NOW (新闻)
+https://dai.google.com/linear/hls/event/5wq9qZtARvOAc7BvT1gJ6w/master.m3u8
+
+#EXTINF:-1 tvg-id="FilmRiseMovies.us" tvg-name="FilmRise Movies" group-title="美国",FilmRise Movies (电影)
+https://dai2.xumo.com/amagi_hls_data_xumo1212A-filmrisemovies/CDN/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FuboSportsNetwork.us" tvg-name="Fubo Sports Network" group-title="美国",Fubo Sports Network (体育)
+https://dai.google.com/linear/hls/event/WyY9hN3pR8OQfLw5g9aEwA/master.m3u8
+
+
+############## 法国 France ##############
+#EXTINF:-1 tvg-id="BFMTV.fr" tvg-name="BFM TV" group-title="法国",BFM TV (新闻)
+https://live-cdn-stream-euw1.bfmtv.bct.nextradiotv.com/master.m3u8
+
+#EXTINF:-1 tvg-id="EuronewsFrench.fr" tvg-name="Euronews French" group-title="法国",Euronews French (新闻)
+https://2f6c5bf4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0ZyYW5jYWlzX0hMUw/playlist.m3u8
+
+#EXTINF:-1 tvg-id="LEquipe.fr" tvg-name="L'Equipe" group-title="法国",L'Equipe (体育)
+https://dshn8inoshngm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-gac2i63dmu8b7/LEquipe_FR.m3u8
+
+#EXTINF:-1 tvg-id="SonyOneHitsAction.fr" tvg-name="Sony One Hits Action" group-title="法国",Sony One Hits Action (电影)
+https://d1tvu4639eiqii.cloudfront.net/playlist.m3u8
+
+
+############## 加拿大 Canada ##############
+#EXTINF:-1 tvg-id="GlobalNews.ca" tvg-name="Global News" group-title="加拿大",Global News (新闻)
+https://live-globalnews.akamaized.net/hls/live/2033657/gnca/master.m3u8
+
+
+############## 澳大利亚 Australia ##############
+#EXTINF:-1 tvg-id="SkyNewsAU.au" tvg-name="Sky News Australia" group-title="澳大利亚",Sky News Australia (新闻)
+https://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau/master.m3u8
+
+
+############## 西班牙 Spain ##############
+#EXTINF:-1 tvg-id="France24ES.es" tvg-name="France 24 Español" group-title="西班牙",France 24 Español (新闻)
+https://live.france24.com/hls/live/2037220/F24_ES_HI_HLS/master_2300.m3u8
+
+
+############## 意大利 Italy ##############
+#EXTINF:-1 tvg-id="EuronewsItalian.it" tvg-name="Euronews Italian" group-title="意大利",Euronews Italian (新闻)
+https://acb6ca89.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0l0YWxpYW5vX0hMUw/playlist.m3u8
+
+
+############## 德国 Germany ##############
+#EXTINF:-1 tvg-id="EuronewsGerman.de" tvg-name="Euronews German" group-title="德国",Euronews German (新闻)
+https://575b7833.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0RldXRzY2hfSExT/playlist.m3u8
+
+
+############## 新西兰 New Zealand ##############
+#EXTINF:-1 tvg-id="NZTV1.nz" tvg-name="NZ TV 1" group-title="新西兰",NZ TV 1 (综合)
+https://i.mjh.nz/nz/tv1.m3u8
+
